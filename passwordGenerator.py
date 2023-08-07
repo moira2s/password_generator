@@ -1,8 +1,8 @@
 import random
-#from flask import Flask
-#app = Flask(__name__)
+from flask import Flask
+app = Flask(__name__)
 
-#@app.route("/")
+@app.route("/")
 
 def passwordGenerator():
     specialChars = "!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
@@ -11,6 +11,8 @@ def passwordGenerator():
     passwordLength = 20
     password = ''.join(random.choices(specialChars + letters + digits, k=passwordLength))
 
-    print("Your password is: " + password)
+    return "You password is: " + password
 
-passwordGenerator()
+
+if __name__ == '__main__':
+    app.run(debug=True, port=5001)
