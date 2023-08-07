@@ -1,0 +1,32 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+#name {
+    text-align: center;
+    color: black;
+}
+
+.btn {
+    background-color: #ffe4e1;
+    font-family: 'Courier Prime',Courier, monospace;
+    color: black;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 14px;
+    text-align: center;
+    left: 50%;
+    right: 50%;
+    position: relative;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+.output {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 25px;
+}

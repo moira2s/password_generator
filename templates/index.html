@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../static/css/index.css">
+        <title>Password Generator</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div id="name">
+        <h2>Random Password Generator</h2>
+        </div>
+        <form action="/generate" method="POST">
+                <h3 class="output">Your password is: {{password}}</h3>
+                <!--<div class="container">-->
+                <input class="btn" type="submit" value="Generate"/>
+                <!--</div>-->
+        </form>
+    </body>
+</html>
